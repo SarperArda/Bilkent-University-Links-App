@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/srs"
+        android:layout_width="159dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="478dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="#0466B3"
+        android:onClick="goToSrs"
+        android:text="SRS"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/Scheduler"
+        app:layout_constraintEnd_toStartOf="@+id/mail"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:strokeColor="#12AFC3" />
+
+    <Button
+        android:id="@+id/mail"
+        android:layout_width="131dp"
+        android:layout_height="83dp"
+        android:layout_marginEnd="44dp"
+        android:layout_marginBottom="99dp"
+        android:backgroundTint="#A10303"
+        android:onClick="goToMail"
+        android:text="MAIL"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="323dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="98dp"
+        android:layout_marginBottom="100dp"
+        app:layout_constraintBottom_toTopOf="@+id/mail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        android:text="Designed by Sarper Arda Bakır"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mail" />
+
+    <Button
+        android:id="@+id/Scheduler"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="11dp"
+        android:layout_marginBottom="94dp"
+        android:onClick="goToSche"
+        android:text="Scheduler"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/srs" />
+
+    <Button
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="7dp"
+        android:onClick="goToMenu"
+        android:text="menu"
+        app:layout_constraintBaseline_toBaselineOf="@+id/Scheduler"
+        app:layout_constraintStart_toStartOf="@+id/srs" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
